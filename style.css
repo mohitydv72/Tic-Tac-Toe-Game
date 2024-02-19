@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #fdd02e;
+}
+.container{
+    margin-top: 5vmin;
+}
+.game{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allBoxes{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 7vmin;
+    /* background-color: #010a01;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9; */
+    color: #fd2e2e;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+#reset{
+    padding: 2vmin 2vmin;
+    font-size: 2.5vmin;
+    /* border: none; */
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+#playAgain{
+    padding: 2vmin 2vmin;
+    font-size: 2.5vmin;
+    /* border: none; */
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+.winnershow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hide{
+    display: none;
+}
+
+@keyframes congratulationsAnimation {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.winner {
+    animation: congratulationsAnimation 0.9s ease-in-out;
+}
